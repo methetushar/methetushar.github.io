@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Ahmed - Full Stack Web Developer</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+        <div class="container mx-auto px-4">
+            <div class="flex h-14 items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-code text-xl"></i>
+                    <span class="font-bold text-lg">Tushar Ahmed</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav flex items-center space-x-6 text-sm font-medium">
+                    <a href="#about" class="transition-colors hover:text-blue-600">About</a>
+                    <a href="#skills" class="transition-colors hover:text-blue-600">Skills</a>
+                    <a href="#experience" class="transition-colors hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="transition-colors hover:text-blue-600">Projects</a>
+                    <a href="#contact" class="transition-colors hover:text-blue-600">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-2">
+                    <a href="https://github.com" target="_blank" class="p-2 hover:bg-gray-100 rounded-md transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="p-2 hover:bg-gray-100 rounded-md transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 hover:bg-gray-100 rounded-md">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="mobile-menu md:hidden py-4 border-t">
+                <div class="flex flex-col space-y-2">
+                    <a href="#about" class="py-2 px-4 hover:bg-gray-100 rounded-md transition-colors">About</a>
+                    <a href="#skills" class="py-2 px-4 hover:bg-gray-100 rounded-md transition-colors">Skills</a>
+                    <a href="#experience" class="py-2 px-4 hover:bg-gray-100 rounded-md transition-colors">Experience</a>
+                    <a href="#projects" class="py-2 px-4 hover:bg-gray-100 rounded-md transition-colors">Projects</a>
+                    <a href="#contact" class="py-2 px-4 hover:bg-gray-100 rounded-md transition-colors">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-24 md:py-32">
+        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+            <div class="flex flex-col justify-center space-y-6">
+                <div class="space-y-4">
+                    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
+                        Hi, I'm <span class="gradient-text">Tushar Ahmed</span>
+                    </h1>
+                    <p class="max-w-2xl text-gray-600 text-lg md:text-xl">
+                        Full Stack Web Developer with 4+ years of experience building scalable web applications using modern
+                        technologies like PHP, Laravel, React.js, and Vue.js.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <a href="#projects" class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors text-center">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border border-gray-300 px-6 py-3 rounded-md hover:bg-gray-50 transition-colors text-center">
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-2 sm:space-y-0 text-sm text-gray-600">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Available for Remote Work</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-briefcase"></i>
+                        <span>4+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 hero-gradient rounded-full"></div>
+                    <img src="assets/tusar-ali.jpg"
+                         alt="Tushar Ahmed"
+                         class="relative w-80 h-80 rounded-full border-4 border-white shadow-2xl object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">About Me</h2>
+                <p class="text-gray-600 text-lg mb-12">
+                    I'm a passionate Full Stack Web Developer with over 4 years of experience in creating robust, scalable web
+                    applications. I specialize in both frontend and backend development, with expertise in modern frameworks and
+                    technologies.
+                </p>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-blue-600 text-3xl mb-4">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+                        <p class="text-gray-600">
+                            Expert in PHP, Laravel, Node.js, and database design with MySQL and PostgreSQL.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+                        <p class="text-gray-600">
+                            Proficient in React.js, Vue.js, Next.js, and modern CSS frameworks like Tailwind.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-purple-600 text-3xl mb-4">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Full Stack Solutions</h3>
+                        <p class="text-gray-600">
+                            End-to-end development from concept to deployment with modern DevOps practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center mb-12">
+                    Skills & Technologies
+                </h2>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-white border rounded-lg p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Backend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PHP</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Laravel</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Express.js</span>
+                        </div>
+                    </div>
+                    <div class="bg-white border rounded-lg p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Frontend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">React.js</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Next.js</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="bg-white border rounded-lg p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Database</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="bg-white border rounded-lg p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Git</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-50 py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center mb-12">
+                    Work Experience
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold">Senior Full Stack Developer</h3>
+                                <p class="text-blue-600 font-medium">Tech Solutions Inc.</p>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600 mt-2 md:mt-0">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                2022 - Present
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Lead development of enterprise web applications using Laravel and React.js. Mentored junior developers and implemented CI/CD pipelines.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold">Full Stack Developer</h3>
+                                <p class="text-blue-600 font-medium">Digital Agency Pro</p>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600 mt-2 md:mt-0">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                2021 - 2022
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Developed custom web applications for clients using PHP, Laravel, and Vue.js. Collaborated with design teams to implement responsive user interfaces.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold">Web Developer</h3>
+                                <p class="text-blue-600 font-medium">StartUp Hub</p>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600 mt-2 md:mt-0">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                2020 - 2021
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Built and maintained multiple client websites using PHP and JavaScript. Implemented database designs and API integrations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center mb-12">
+                    Featured Projects
+                </h2>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=200&width=400&text=E-Commerce+Platform"
+                                 alt="E-Commerce Platform"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">E-Commerce Platform</h3>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Full-featured e-commerce platform with admin dashboard, payment integration, and inventory management.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Laravel</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">MySQL</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Stripe API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=200&width=400&text=Task+Management+System"
+                                 alt="Task Management System"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">Task Management System</h3>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Collaborative task management application with real-time updates and team collaboration features.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">React.js</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Node.js</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Socket.io</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=200&width=400&text=Restaurant+Management"
+                                 alt="Restaurant Management"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">Restaurant Management System</h3>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Complete restaurant management solution with POS, inventory tracking, and customer management.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">PHP</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Laravel</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=200&width=400&text=Real+Estate+Portal"
+                                 alt="Real Estate Portal"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">Real Estate Portal</h3>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Property listing platform with advanced search, virtual tours, and agent management system.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Next.js</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">Prisma</span>
+                                <span class="border border-gray-300 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-50 py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center mb-12">
+                    Get In Touch
+                </h2>
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Let's work together</h3>
+                            <p class="text-gray-600">
+                                I'm always interested in new opportunities and exciting projects. Whether you need a full-stack
+                                developer for your team or want to discuss a project, feel free to reach out!
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                                <span>methetushar@email.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone text-blue-600"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                <span>Available for Remote Work</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com" target="_blank" class="border border-gray-300 p-3 rounded-md hover:bg-gray-100 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="border border-gray-300 p-3 rounded-md hover:bg-gray-100 transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-2">Send me a message</h3>
+                        <p class="text-gray-600 mb-6">Fill out the form below and I'll get back to you as soon as possible.</p>
+                        <form class="space-y-4">
+                            <div class="grid gap-4 md:grid-cols-2">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name"
+                                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com"
+                                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project inquiry"
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-black text-white py-3 px-4 rounded-md hover:bg-gray-800 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-code"></i>
+                    <p class="text-sm text-gray-600">
+                        Built with HTML, CSS & Tailwind CSS. © 2024 Tushar Ahmed. All rights reserved.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com" target="_blank" class="text-gray-600 hover:text-black transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-black transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fas fa-robot"></i>
+        </button>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Assistant</h3>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    👋 Hi! I'm Tushar's AI assistant. I can help you learn more about his experience, skills, and projects. What would you like to know?
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything about Tushar...">
+                <button class="chat-send" id="chatSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('#contact form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            contactForm.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // AI Assistant functionality
+        const chatToggle = document.getElementById('chatToggle');
+        const chatContainer = document.getElementById('chatContainer');
+        const chatClose = document.getElementById('chatClose');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const chatSend = document.getElementById('chatSend');
+        const typingIndicator = document.getElementById('typingIndicator');
+
+        // Knowledge base for the AI assistant
+        const knowledgeBase = {
+            skills: {
+                keywords: ['skills', 'technologies', 'tech stack', 'programming', 'languages', 'frameworks'],
+                response: "Tushar is proficient in a wide range of technologies including:\n\n🔧 **Backend**: PHP, Laravel, Node.js, Express.js\n💻 **Frontend**: React.js, Vue.js, Next.js, JavaScript, TypeScript\n🗄️ **Databases**: MySQL, PostgreSQL\n⚙️ **Tools**: Git, Docker, AWS, REST APIs\n🎨 **Styling**: Tailwind CSS\n\nHe has 4+ years of experience working with these technologies to build scalable web applications."
+            },
+            experience: {
+                keywords: ['experience', 'work', 'job', 'career', 'years', 'background'],
+                response: "Tushar has 4+ years of professional experience as a Full Stack Web Developer:\n\n🚀 **Senior Full Stack Developer** at Tech Solutions Inc. (2022-Present)\n- Leading enterprise web application development\n- Mentoring junior developers\n- Implementing CI/CD pipelines\n\n💼 **Full Stack Developer** at Digital Agency Pro (2021-2022)\n- Developed custom web applications for clients\n- Collaborated with design teams\n\n🌱 **Web Developer** at StartUp Hub (2020-2021)\n- Built and maintained client websites\n- Implemented database designs and API integrations"
+            },
+            projects: {
+                keywords: ['projects', 'portfolio', 'work samples', 'examples', 'built', 'created'],
+                response: "Here are some of Tushar's featured projects:\n\n🛒 **E-Commerce Platform**: Full-featured platform with admin dashboard, payment integration, and inventory management (Laravel, Vue.js, MySQL)\n\n📋 **Task Management System**: Collaborative application with real-time updates and team collaboration (React.js, Node.js, Socket.io)\n\n🍽️ **Restaurant Management System**: Complete POS solution with inventory tracking (PHP, Laravel, Vue.js)\n\n🏠 **Real Estate Portal**: Property listing platform with advanced search and virtual tours (Next.js, TypeScript, Prisma)\n\nAll projects showcase his full-stack development capabilities!"
+            },
+            contact: {
+                keywords: ['contact', 'hire', 'email', 'phone', 'reach', 'get in touch'],
+                response: "You can reach Tushar through:\n\n📧 **Email**: tushar.ahmed@email.com\n📱 **Phone**: +1 (555) 123-4567\n💼 **LinkedIn**: Available in the header\n🐙 **GitHub**: Check out his code repositories\n\nHe's available for remote work and always interested in new opportunities and exciting projects. Feel free to reach out!"
+            },
+            about: {
+                keywords: ['about', 'who', 'background', 'story', 'developer'],
+                response: "Tushar Ahmed is a passionate Full Stack Web Developer with 4+ years of experience creating robust, scalable web applications. He specializes in both frontend and backend development with expertise in modern frameworks and technologies.\n\n🎯 **Specialties**:\n- Backend Development (PHP, Laravel, Node.js)\n- Frontend Development (React.js, Vue.js, Next.js)\n- Full Stack Solutions from concept to deployment\n\nHe's completed projects ranging from small business websites to large enterprise applications, always focusing on clean code, user experience, and scalable architecture."
+            }
+        };
+
+        // Toggle chat widget
+        chatToggle.addEventListener('click', () => {
+            chatContainer.classList.toggle('active');
+            if (chatContainer.classList.contains('active')) {
+                chatInput.focus();
+            }
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatContainer.classList.remove('active');
+        });
+
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            // Add user message
+            addMessage(message, 'user');
+            chatInput.value = '';
+
+            // Show typing indicator
+            showTyping();
+
+            // Generate AI response
+            setTimeout(() => {
+                const response = generateResponse(message);
+                hideTyping();
+                addMessage(response, 'bot');
+            }, 1000 + Math.random() * 1000); // Random delay between 1-2 seconds
+        }
+
+        // Add message to chat
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.innerHTML = text.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Show typing indicator
+        function showTyping() {
+            typingIndicator.style.display = 'flex';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Hide typing indicator
+        function hideTyping() {
+            typingIndicator.style.display = 'none';
+        }
+
+        // Generate AI response
+        function generateResponse(userMessage) {
+            const message = userMessage.toLowerCase();
+
+            // Check for greetings
+            if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+                return "Hello! 👋 I'm here to help you learn more about Tushar Ahmed. You can ask me about his skills, experience, projects, or how to contact him. What would you like to know?";
+            }
+
+            // Check for thanks
+            if (message.includes('thank') || message.includes('thanks')) {
+                return "You're welcome! 😊 Is there anything else you'd like to know about Tushar's background or experience?";
+            }
+
+            // Search knowledge base
+            for (const [category, data] of Object.entries(knowledgeBase)) {
+                if (data.keywords.some(keyword => message.includes(keyword))) {
+                    return data.response;
+                }
+            }
+
+            // Default response
+            return "I'd be happy to help! I can tell you about Tushar's:\n\n• 💻 **Skills & Technologies**\n• 🚀 **Work Experience**\n• 📁 **Projects & Portfolio**\n• 📞 **Contact Information**\n• 👨‍💻 **Background & Story**\n\nWhat would you like to learn more about?";
+        }
+
+        // Event listeners
+        chatSend.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Close chat when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!chatContainer.contains(e.target) && !chatToggle.contains(e.target)) {
+                chatContainer.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
